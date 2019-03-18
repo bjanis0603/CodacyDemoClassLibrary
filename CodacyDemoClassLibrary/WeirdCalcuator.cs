@@ -6,52 +6,88 @@ using System.Threading.Tasks;
 
 namespace CodacyDemoClassLibrary
 {
-    public class WeirdCalcuator
+    public static class WeirdCalcuator
     {
-        public string ThisMethodIsNotUsed()
+        public static string ThisMethodIsNotUsed()
         {
             return "Nope, it sure isn't!";
         }
 
-        public int DoSomeUnnecessaryCalculation(int input)
+        public static int DoSomeUnnecessaryCalculation(int a, int b)
         {
-            if (input > 3)
+            int output;
+
+            if (a > 9)
             {
-                input = input * 3;
+                b = 7;
+            }
+            else if (a > 8)
+            {
+                b = 3;
+            }
+            else if (a > 7)
+            {
+                b = 3;
+            }
+            else if (b < a)
+            {
+                a = b * 3;
             }
 
-            if (input < 20)
+            string unnecessaryString = HowOftenDoesPatientVisit(a);
+
+            if (a != b)
             {
-                input = input + 20;
+                string anotherUnnecessaryThing = HowOftenDoesPatientVisit(b);
             }
             else
             {
-                input = 20;
+                string yetAnotherUnnecessaryThing = HowOftenDoesPatientVisit(a - b);
             }
 
-            return input;
+            output = b * a;
+
+            return output;
         }
 
-        public int DoAnotherUnnecessaryCalculation(int input)
+        public static int DoAnotherUnnecessaryCalculation(int a, int b)
         {
-            if (input > 3)
+            int output;
+
+            if (a > 9)
             {
-                input = input * 3;
+                b = 7;
+            }
+            else if (a > 8)
+            {
+                b = 3;
+            }
+            else if (a > 7)
+            {
+                b = 3;
+            }
+            else if (b < a)
+            {
+                a = b * 3;
             }
 
-            if (input < 20)
+            string unnecessaryString = HowOftenDoesPatientVisit(a);
+
+            if (a != b)
             {
-                input = input + 20;
+                string anotherUnnecessaryThing = HowOftenDoesPatientVisit(b);
             }
             else
             {
-                input = 20;
+                string yetAnotherUnnecessaryThing = HowOftenDoesPatientVisit(a - b);
             }
 
-            return input;
+            output = b * a;
+
+            return output;
         }
 
-        public string HowOftenDoesPatientVisit(int numberOfVisits)
+        public static string HowOftenDoesPatientVisit(int numberOfVisits)
         {
             //string thisIsBad = "We should not have commented out code in our files";
 

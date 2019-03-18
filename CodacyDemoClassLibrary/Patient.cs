@@ -8,8 +8,8 @@ namespace CodacyDemoClassLibrary
 {
     public class Patient
     {
-        private string lastName;
-        private string firstName;
+        private readonly string lastName;
+        private readonly string firstName;
         public DateTime dateOfBirth;
 
         public Patient(string _lastName, string _firstname, DateTime _DateOfBirth)
